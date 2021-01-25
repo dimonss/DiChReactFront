@@ -1,6 +1,8 @@
+import stringRU from "../../../constants/stringsRU";
+
 const Production = () => (
     <div>
-        Production
+        {stringRU.PRODUCTION}
     </div>
 )
 export default Production

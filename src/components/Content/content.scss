@@ -1,0 +1,63 @@
+.horizonLine {
+  width: 98%;
+}
+
+@mixin center {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.content {
+  //@include center;
+  display: flex;
+  justify-content: space-around;
+  align-items: stretch;
+  flex-wrap: wrap;
+
+  margin: 10px;
+
+  border-top: 1px solid #979797;
+  border-bottom: 1px solid #979797;
+}
+
+.card {
+  display: inline-block;
+  margin: 10px;
+  padding: 15px;
+  transition: transform 600ms;
+  border: #979797 solid 1px;
+  box-shadow: 2px 2px 2px #979797;
+  width: 250px;
+
+  &:hover {
+    transition: transform 300ms;
+    box-shadow: 5px 5px 5px #979797;
+    transform: scale(1.01);
+  }
+
+  &-info {
+    &__name {
+      @include center;
+      font-size: 22px;
+    }
+
+    //&__button {
+    //  padding: 10px;
+    //  img {
+    //    width: 50px;
+    //    &:hover{
+    //      transform: scale(1.1);
+    //    }
+    //  }
+    //}
+  }
+
+  &-image {
+    @include center;
+
+    img {
+      width: 200px;
+    }
+  }
+}

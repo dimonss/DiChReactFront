@@ -1,6 +1,8 @@
+import stringRU from "../../../constants/stringsRU";
+
 const Skool = () => (
     <div>
-        Skool
+        {stringRU.SKOOL}
     </div>
 )
 export default Skool

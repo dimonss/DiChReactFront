@@ -1,6 +1,8 @@
+import stringRU from "../../../constants/stringsRU";
+
 const Repair = () => (
     <div>
-        Repair
+        {stringRU.REPAIR}
     </div>
 )
 export default Repair

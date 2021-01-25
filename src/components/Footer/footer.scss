@@ -3,14 +3,14 @@
   width: 100%;
   height: 84px;
   background-size: cover;
-  background-position: center center;
+  background-position: center;
+  align-items: center;
+  justify-content: center;
 }
 
 .mainLine {
   display: flex;
   width: 95%;
-  height: 100%;
-  margin: 0 auto;
   color: white;
   justify-content: space-between;
 

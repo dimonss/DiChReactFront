@@ -1,6 +1,8 @@
+import stringRU from "../../../constants/stringsRU";
+
 const About = () => (
     <div>
-        About
+        {stringRU.ABOUT_COMPANY}
     </div>
 )
 export default About
