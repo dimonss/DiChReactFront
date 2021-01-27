@@ -1,0 +1,11 @@
+@mixin fontStyle {
+  font-family: cursive;
+  font-weight: bold;
+  font-style: italic;
+}
+
+@mixin center {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}

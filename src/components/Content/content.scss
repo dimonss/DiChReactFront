@@ -1,15 +1,13 @@
+@import "../../mixins";
+
 .horizonLine {
   width: 98%;
 }
 
-@mixin center {
-  display: flex;
-  justify-content: center;
-  align-content: center;
-}
+
 
 .content {
-  //@include center;
+  @include center;
   display: flex;
   justify-content: space-around;
   align-items: stretch;
@@ -19,6 +17,7 @@
 
   border-top: 1px solid #979797;
   border-bottom: 1px solid #979797;
+  padding-bottom: 74px;
 }
 
 .card {
@@ -60,4 +59,37 @@
       width: 200px;
     }
   }
+}
+
+.repair{
+  display: flex;
+  //width: 100%;
+  white-space: pre-wrap;
+  flex-direction: row;
+  padding: 1%;
+  @media (max-width: 750px) {
+    flex-direction: column;
+  }
+
+    &-leftBlock{
+    display: flex;
+    align-items: center;
+    padding: 1%;
+    font-size: 20px;
+    @include fontStyle;
+  }
+
+  &-rightBlock{
+    padding: 1%;
+    &__title{
+      @include center;
+      color: #226e93;
+      font-size: 28px;
+      @include fontStyle;
+      text-shadow: 3px 5px 13px #44685d;
+      padding: 10px 0 10px 0;
+    }
+    width: 100%;
+  }
+
 }

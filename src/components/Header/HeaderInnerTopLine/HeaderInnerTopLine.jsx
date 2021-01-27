@@ -21,7 +21,6 @@ const HeaderInnerTopLine = () => {
     }
     return (
         <>
-            <div className="topLineVoid"/>
             <div className={classNames("topLine", {"backBackground":backBackground})}>
                 <div className="topLine-leftSide">
                     <div className="topLine-leftSide__logo">
