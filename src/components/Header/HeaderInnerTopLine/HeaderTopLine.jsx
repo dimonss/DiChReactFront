@@ -6,7 +6,7 @@ import classNames from "classnames";
 
 
 
-const HeaderInnerTopLine = () => {
+const HeaderTopLine = () => {
     const [backBackground, setBackBackground] = useState(false)
 
     useEffect(() => {
@@ -42,4 +42,4 @@ const HeaderInnerTopLine = () => {
     )
 }
 
-export default HeaderInnerTopLine
+export default HeaderTopLine

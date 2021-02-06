@@ -7,11 +7,9 @@ const mapDispatchToProps = {
         removeTask: removeTaskActionCreator
 }
 
-const mapStateToProps = (store) => {
-    return{
+const mapStateToProps = (store) => ({
         data: store.appPage.tasks
-    }
-}
+    })
 
 const TaskListContainer = connect(mapStateToProps, mapDispatchToProps)(TaskList)
 

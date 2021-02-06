@@ -7,15 +7,16 @@ import Production from "./Production/Production";
 import Skool from "./Skool/Scool";
 import Repair from "./Repair/Repair";
 import About from "./About/About";
+import urls from "../../urls";
 
 const Content = () => (
     <div className="content">
-        <Route exact path='/' render={() => <ToDoApp/>}/>
-        <Route path='/spares' render={() => <Spares/>}/>
-        <Route path='/production' render={() => <Production/>}/>
-        <Route path='/skool' render={() => <Skool/>}/>
-        <Route path='/repair' render={() => <Repair/>}/>
-        <Route path='/about' render={() => <About/>}/>
+        <Route exact path={urls.HOME} render={() => <ToDoApp/>}/>
+        <Route path={urls.SPARES} render={() => <Spares/>}/>
+        <Route path={urls.PRODUCTION} render={() => <Production/>}/>
+        <Route path={urls.SKOOL} render={() => <Skool/>}/>
+        <Route path={urls.REPAIR} render={() => <Repair/>}/>
+        <Route path={urls.ABOUT} render={() => <About/>}/>
     </div>
 )
 export default Content

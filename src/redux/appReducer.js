@@ -8,7 +8,7 @@ let initialState = {
     inputText: '',
     counter: 0
 }
-const appReducer = (state = initialState, action) => {
+    const appReducer = (state = initialState, action) => {
     switch (action.type) {
         case UPDATE_NEW_TEXT:
             return {...state, inputText: action.newText}
