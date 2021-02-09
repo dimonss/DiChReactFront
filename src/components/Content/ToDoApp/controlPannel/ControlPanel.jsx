@@ -11,7 +11,6 @@ const ControlPanel = (props) => {
 
     const onTestChange = () => {
         var key = window.event.keyCode;
-        console.log(key);
         if (key === 13) {
             addTask();
         }

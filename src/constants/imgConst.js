@@ -7,7 +7,9 @@ const img = {
     REPAIR: process.env.PUBLIC_URL + "img/logo_repair.png",
     ABOUT: process.env.PUBLIC_URL + "img/logo_about.png",
     GOODS_FOR_TEST: process.env.PUBLIC_URL + "img/goods.jpg",
-    BASKET: process.env.PUBLIC_URL + "img/basket.jpeg"
+    BASKET: process.env.PUBLIC_URL + "img/basket.jpeg",
+    BUTTON_THREE_HORIZONTAL_LINES: process.env.PUBLIC_URL + "img/threeHorizontalLines.svg",
+    BUTTON_CLOSE: process.env.PUBLIC_URL + "img/close.svg",
 }
 
 export default img

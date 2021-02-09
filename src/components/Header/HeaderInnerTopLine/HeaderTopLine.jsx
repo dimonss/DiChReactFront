@@ -6,8 +6,10 @@ import classNames from "classnames";
 
 
 
+
 const HeaderTopLine = () => {
     const [backBackground, setBackBackground] = useState(false)
+
 
     useEffect(() => {
         window.addEventListener('scroll', handleScroll);
@@ -23,6 +25,7 @@ const HeaderTopLine = () => {
         <>
             <div className={classNames("topLine", {"backBackground":backBackground})}>
                 <div className="topLine-leftSide">
+                    <div className="topLine-leftSide__freeSpace"/>
                     <div className="topLine-leftSide__logo">
                         <img src={img.LOGO_ICO} alt="logo DiCh"/>
                     </div>
