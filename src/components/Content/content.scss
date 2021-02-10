@@ -17,7 +17,18 @@
 
   border-top: 1px solid #979797;
   border-bottom: 1px solid #979797;
-  padding-bottom: 74px;
+  margin-bottom: 94px;
+}
+
+.navbar{
+  width: 282px;
+  background-color: #979797;
+  border-radius: 10px;
+  &-inner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .card {
@@ -40,16 +51,6 @@
       @include center;
       font-size: 22px;
     }
-
-    //&__button {
-    //  padding: 10px;
-    //  img {
-    //    width: 50px;
-    //    &:hover{
-    //      transform: scale(1.1);
-    //    }
-    //  }
-    //}
   }
 
   &-image {
@@ -66,21 +67,18 @@
   //width: 100%;
   white-space: pre-wrap;
   flex-direction: row;
-  padding: 1%;
   @media (max-width: 750px) {
     flex-direction: column;
   }
 
     &-leftBlock{
-    display: flex;
-    align-items: center;
-    padding: 1%;
-    font-size: 20px;
-    @include fontStyle;
+      display: flex;
+      align-items: center;
+      font-size: 20px;
+      @include fontStyle;
   }
 
   &-rightBlock{
-    padding: 1%;
     &__title{
       @include center;
       color: #226e93;

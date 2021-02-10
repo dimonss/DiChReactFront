@@ -6,7 +6,7 @@ let reducers = combineReducers({
     appPage: appReducer
 })
 
+// let store = createStore(reducers, undefined)
 let store = createStore(reducers, undefined, composeWithDevTools())
-window.store = store
 
 export default store

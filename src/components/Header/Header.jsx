@@ -10,12 +10,12 @@ import HeaderTopLine from "./HeaderInnerTopLine/HeaderTopLine";
 const Header = () => (
       <div className="header" style={img.BACKGROUND}>
           <HeaderTopLine/>
-          <Route exact path={urls.HOME} render={() => {}} />
-          <Route path={urls.SPARES}  render={() => <HeaderBottomLine img={process.env.PUBLIC_URL+img.SPARES} txt={stringRU.SPARES} />}/>
-          <Route path={urls.PRODUCTION} render={() => <HeaderBottomLine img={process.env.PUBLIC_URL+img.PRODUCTION} txt={stringRU.PRODUCTION} />}/>
-          <Route path={urls.SKOOL} render={() => <HeaderBottomLine img={process.env.PUBLIC_URL+img.SKOOL} txt={stringRU.SKOOL} />}/>
-          <Route path={urls.REPAIR} render={() => <HeaderBottomLine img={process.env.PUBLIC_URL+img.REPAIR} txt={stringRU.REPAIR} />}/>
-          <Route path={urls.ABOUT} render={() => <HeaderBottomLine img={process.env.PUBLIC_URL+img.ABOUT} txt={stringRU.ABOUT_COMPANY} />}/>
+          <Route exact path={urls.HOME} />
+          <Route path={urls.SPARES}  component={() => <HeaderBottomLine img={process.env.PUBLIC_URL+img.SPARES} txt={stringRU.SPARES} />}/>
+          <Route path={urls.PRODUCTION} component={() => <HeaderBottomLine img={process.env.PUBLIC_URL+img.PRODUCTION} txt={stringRU.PRODUCTION} />}/>
+          <Route path={urls.SKOOL} component={() => <HeaderBottomLine img={process.env.PUBLIC_URL+img.SKOOL} txt={stringRU.SKOOL} />}/>
+          <Route path={urls.REPAIR} component={() => <HeaderBottomLine img={process.env.PUBLIC_URL+img.REPAIR} txt={stringRU.REPAIR} />}/>
+          <Route path={urls.ABOUT} component={() => <HeaderBottomLine img={process.env.PUBLIC_URL+img.ABOUT} txt={stringRU.ABOUT_COMPANY} />}/>
       </div>
 )
 

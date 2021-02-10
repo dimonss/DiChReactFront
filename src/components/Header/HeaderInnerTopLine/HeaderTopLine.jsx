@@ -3,6 +3,7 @@ import img from "../../../constants/imgConst"
 import {NavLink} from "react-router-dom";
 import stringRU from "../../../constants/stringsRU";
 import classNames from "classnames";
+import urls from "../../../constants/urls";
 
 
 
@@ -25,7 +26,6 @@ const HeaderTopLine = () => {
         <>
             <div className={classNames("topLine", {"backBackground":backBackground})}>
                 <div className="topLine-leftSide">
-                    <div className="topLine-leftSide__freeSpace"/>
                     <div className="topLine-leftSide__logo">
                         <img src={img.LOGO_ICO} alt="logo DiCh"/>
                     </div>
@@ -34,11 +34,11 @@ const HeaderTopLine = () => {
                     </div>
                 </div>
                 <div className="topLine-rightSide">
-                    <NavLink exact className="topLine-rightSide__txt"  to='/' activeClassName="active">{stringRU.HOME_PAGE}</NavLink>
-                    <NavLink className="topLine-rightSide__txt"  to='/spares' activeClassName="active">{stringRU.SPARES}</NavLink>
-                    <NavLink className="topLine-rightSide__txt"  to='/production' activeClassName="active">{stringRU.PRODUCTION}</NavLink>
-                    <NavLink className="topLine-rightSide__txt"  to='/skool' activeClassName="active">{stringRU.SKOOL}</NavLink>
-                    <NavLink className="topLine-rightSide__txt"  to='/repair' activeClassName="active">{stringRU.REPAIR}</NavLink>
+                    <NavLink exact className="link_button"  to={urls.HOME} activeClassName="active">{stringRU.HOME_PAGE}</NavLink>
+                    <NavLink className="link_button"  to={urls.SPARES}  activeClassName="active">{stringRU.SPARES}</NavLink>
+                    <NavLink className="link_button"  to={urls.PRODUCTION}  activeClassName="active">{stringRU.PRODUCTION}</NavLink>
+                    <NavLink className="link_button"  to={urls.SKOOL}  activeClassName="active">{stringRU.SKOOL}</NavLink>
+                    <NavLink className="link_button"  to={urls.REPAIR}  activeClassName="active">{stringRU.REPAIR}</NavLink>
                 </div>
             </div>
         </>
