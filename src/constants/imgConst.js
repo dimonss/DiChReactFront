@@ -10,6 +10,14 @@ const img = {
     BASKET: process.env.PUBLIC_URL + "img/basket.jpeg",
     BUTTON_THREE_HORIZONTAL_LINES: process.env.PUBLIC_URL + "img/threeHorizontalLines.svg",
     BUTTON_CLOSE: process.env.PUBLIC_URL + "img/close.svg",
+    CIRCLE: process.env.PUBLIC_URL + "img/testCarousel/circle.png",
+    test1: process.env.PUBLIC_URL + "img/testCarousel/23.png",
+    test2: process.env.PUBLIC_URL + "img/testCarousel/2493.png",
+    test3: process.env.PUBLIC_URL + "img/testCarousel/25.png",
+    test4: process.env.PUBLIC_URL + "img/testCarousel/26.png",
+    test5: process.env.PUBLIC_URL + "img/testCarousel/27.png",
+    test6: process.env.PUBLIC_URL + "img/testCarousel/29.png",
+    test7: process.env.PUBLIC_URL + "img/testCarousel/24.png",
 }
 
 export default img
